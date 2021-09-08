@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
     <title>Dynamous</title>
 </head>
 <body>
@@ -23,7 +23,11 @@
             
         <header>
             <div class="barra-topo">
-                <p><i class="fab - fa-whatsapp"></i>(85) 9822-51426</p>
+                <div class="social-barra">
+                  <a href="#"><i class="fab fa-whatsapp"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
             </div>
            
             <div class="img-wrapper">
@@ -33,15 +37,14 @@
             <div class="logo-wrapper">
                 <p>dynamous</p>
             </div>
-            <ul class="internacionalization">
-                <li><img class="portugues" src="/imagens/portugues.png"></li>
-                <li><img class="ingles" src="/imagens/ingles.svg"></li>
-            </ul>
+           
                
 
             <div class="banner">
-            <h1>modernizamos<br> seu negócio com soluções</h1>
-                <h2>tecnológicas</h2>
+            <h1>modernizamos seu negócio com soluções<br>
+        <span class="txt-type" data-wait="3000" data-words='["tecnológicas", "Profissionais","inovadoras"]
+        '></span>
+</h1>
             <p>para seu negócio temos Desenvolvimento de sites, Landing Pages, catálogo virtual e <br>tráfego</p>
         </div>
         <div class="botao-wrapper">
@@ -55,22 +58,19 @@
         <div class="sidebar">
             <nav>
                 <ul class="menu">
-                    <li class="menu-item"><a href="#" class="menu-link">inicio</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">empresa</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link" id="menu-link1">home</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">serviços</a></li>
                     <li class="menu-item"><a href="#" class="menu-link">metodologia</a></li>
                     <li class="menu-item"><a href="#" class="menu-link">projetos</a></li>
                     <li class="menu-item"><a href="#" class="menu-link">contato</a></li>   
                 </ul>
             </nav>
-            <div class="social">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
+         
         </div>
     </div>
-</div>
 
 </div>
     <script src="js/script.js"></script>
+    <script src="js/digitando.js"></script>
 </body>
 </html>

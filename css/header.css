@@ -1,21 +1,25 @@
 .barra-topo{
-    background-color: rgb(51, 51, 51);
+   position: absolute;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content:right;
+   border-bottom: 1px solid rgb(116, 116, 116);
     width: 100%;
     height: 2.2em;
+  
     
 }
-
-.barra-topo p {
-    font-size: 1rem;
-    font-family: var(--font-primary);
-    color: rgb(124, 124, 124);
-    float:right;
-    margin-top: 0.5rem;
-    margin-right: 7.5rem;
-
+.social-barra{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    
 }
-.barra-topo i{
-    color: #78ffac;
+.social-barra i{
+    color: #78ffd6;
+    font-size: 1.1rem;
     margin-right: 0.3rem;
 }
 header{
@@ -30,7 +34,7 @@ header{
     position: fixed;
     z-index: 100;
     right:2rem;
-    top:3rem;
+    top:4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -67,7 +71,7 @@ header{
     width: 100%;
     height: .1rem;
     background: #78ffd6;
-    box-shadow: 0.1rem .1rem 1px #000;
+    
     transition: transform 1s;
     
 
@@ -116,41 +120,28 @@ header{
     text-align: center;
 }
 .menu-link{
-    font-family: var(--font-primary);
+    font-family: "Rubik", sans-serif;
     font-size: 1.5rem;
     color: grey;
+    text-transform: uppercase;
 
-}
-.social{
-    position: absolute;
-    bottom: 5rem;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-.social i{
-    color:#555;
-    height: 2.5rem;
-    width: 2.5rem;
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
 }
 
 
 .img-wrapper{
     width: 100%;
     height: 100%;
-    background-color: rgb(2, 2, 22);
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #212129, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #212129, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .img-wrapper img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
-    opacity:50%;
+    opacity:20%;
 }
 
 .banner{
@@ -167,21 +158,20 @@ header{
     font-size: 1.8rem;
     font-weight: bold;
     font-family: var(--font-primary);
-    text-shadow: .1rem .1rem 1px rgb(119, 119, 119);
+
     line-height: 2.3rem;
 }
-.banner h2{
-    text-transform: capitalize;
-    width: 100%;
-    text-align: center;
-    color: #78ffd6;
-    font-size: 1.8rem;
-    font-weight: bold;
-    font-family:var(--font-primary);
-    text-shadow: .1rem .1rem 1px rgba(0,0,0,.4);
-    line-height: 2.3rem;
+.txt-type{
+    color:#78ffd6;
+}
+
+.txt-type > .txt{
+    border-right: 0.2rem solid #fff;
 
 }
+
+
+
 .banner p{
     line-height: 1.5rem;
     text-transform: capitalize;
@@ -198,7 +188,8 @@ header{
     width: 10em;
     height: 3em;
     position: absolute;
-    top: 3em;
+    top: 4rem;
+    left: .5rem;
 }
 .logo-wrapper p{
     text-transform: capitalize;
@@ -212,8 +203,8 @@ header{
 .internacionalization{
 width: 3.5rem;
 position: absolute;
-top: 3.5rem;
-left: 10rem;
+top: 4.5rem;
+left: 11rem;
 display: flex;
 align-items: center;
 flex-direction: row;
@@ -250,7 +241,7 @@ justify-content: space-between;
     border-radius: 6px;
     border: none;
     text-align: center;
-    color: rgb(104, 104, 104);
+    color: rgb(80, 80, 80);
     max-width: 300px;  
     margin-bottom: 1rem; 
     text-decoration: none;
@@ -300,6 +291,11 @@ justify-content: space-between;
     
 }
 
+
+
+
+
+
 @media screen and (min-width: 1024px){
 
     .banner{
@@ -310,10 +306,7 @@ justify-content: space-between;
     line-height: 4rem;
 }
 
-.banner h2{
-    font-size: 3.5rem;
-    margin-top: 1rem;
-}
+
 .banner p{
     font-size: 1.2rem;
 }
@@ -333,7 +326,7 @@ justify-content: space-between;
    
 }
 .botao-mais-detalhes:hover{
-    color: #555;
+    color: rgb(80, 80, 80);
     background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
@@ -350,8 +343,8 @@ justify-content: space-between;
 .logo-wrapper{
     width: 12em;
     height: 4em;
-    top:5rem;
-    left: 8rem;
+    top:4rem;
+    left: 12rem;
 }
 .logo-wrapper p{
     font-size: 2.5rem;
@@ -366,29 +359,56 @@ justify-content: space-between;
 .sidebar{
     top:2rem;
     background:transparent;
-    width: 55%;
+    width: 50%;
     height: 10em;
     position: absolute;
-    right: 12rem;
+    right: 21rem;
+    transition: none;
 }
 .menu{
-width: 80%;
+width: 75%;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
 }
+
 .menu-link{
-    color: rgb(196, 196, 196);
-
+    font-size: .8rem;
+    letter-spacing: .2rem;
+    font-weight: 600;
+    font-family:"Rubik",sans-serif;
+    color:rgb(148, 148, 148);
+}
+.menu-link:hover{
+    color:#78ffd6;
+}
+#menu-link1{
+    color:#78ffd6;
 }
 
-.social{
-    display: block;
-    position:fixed;
-    top:3rem;
-    left:92rem;
-    
-    
+.barra-topo{
+    height: 2.9rem;
+}
+.social-barra{
+justify-content: center;
+}
+.social-barra i{
+    cursor: pointer;
+    color: #78ffd6;
+    font-size: 1.5rem;
+    margin-right: 0.3rem;
     
 }
+.social-barra i:hover{
+    color: gray;
+
+
+}
+.social-barra a{
+    z-index: 100;
+}
+
+
+
+
 }

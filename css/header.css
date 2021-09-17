@@ -185,21 +185,20 @@ header{
    
 }
 .logo-wrapper {
-    width: 10em;
-    height: 3em;
+    width: 12em;
+    height: 6em;
     position: absolute;
-    top: 4rem;
-    left: .5rem;
+    top: 2.5rem;
+    left: 1.2rem;
 }
-.logo-wrapper p{
-    text-transform: capitalize;
-    color:#fff;
-    font-size: 2em;
-    text-align: center;  
+.logo-img{
+ height: 100%;
+ width: 100%;
+object-position: center;
+object-fit: cover;
 }
-.logo-wrapper p::first-letter{
-    color: #78ffd6;
-}
+
+
 .internacionalization{
 width: 3.5rem;
 position: absolute;
@@ -341,9 +340,9 @@ justify-content: space-between;
     background:black;
 }
 .logo-wrapper{
-    width: 12em;
-    height: 4em;
-    top:4rem;
+    width: 15em;
+    height: 6em;
+    top:3rem;
     left: 12rem;
 }
 .logo-wrapper p{
@@ -372,6 +371,7 @@ flex-direction: row;
 justify-content: space-between;
 }
 
+
 .menu-link{
     font-size: .8rem;
     letter-spacing: .2rem;
@@ -380,8 +380,10 @@ justify-content: space-between;
     color:rgb(148, 148, 148);
 }
 .menu-link:hover{
-    color:#78ffd6;
+    color:#78ffd6; 
+
 }
+
 #menu-link1{
     color:#78ffd6;
 }

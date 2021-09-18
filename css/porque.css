@@ -1,0 +1,34 @@
+.porque-nos{
+    background: #444444;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.card-porque{
+    margin-top: 1rem;
+    width: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.porque-nos h2{
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    color: #FFFFFF;
+}
+.card-porque h3{
+color: #FFFFFF;;
+}
+.card-porque i{
+    font-size: 2rem;
+    color: #78FFD6;
+}
+.card-porque p{
+    padding-top: .3rem;
+    color: #B6B6B6;
+}

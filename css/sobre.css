@@ -3,6 +3,7 @@
     padding-top: 2rem;
     padding-right: 1rem;
     padding-left: 1rem;
+    
 }
 .titulo-sobre{
     text-transform: capitalize;
@@ -20,7 +21,7 @@
 
 }
 .sobre h3{
-    font-size: 2.6rem;
+    font-size: 2.3rem;
     color: #636363;
     text-transform: capitalize;
     font-family: var(--font-primary);
@@ -67,6 +68,7 @@
 
 
 
+
 @media screen and (min-width: 1024px){
 
 .sobre{
@@ -94,5 +96,6 @@ padding-top: 6rem;
     object-fit: cover;
     object-position: center; 
 }
+
 
 }

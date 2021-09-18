@@ -1,0 +1,148 @@
+.servicos{
+    background-color: #F1F1F1;
+}
+.servicos h2{
+    padding-top: 3rem;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-family: "Rubik", sans-serif;
+    color:#FFFFFF;
+    background-color: #2E2E2E;
+  
+}
+.servicos h2::before{
+    content: "";
+    border-right: .2rem solid #78ffd6;
+    border-top: .2rem solid transparent;
+    border-left: .2rem solid transparent;
+    border-bottom: .2rem solid transparent;
+    margin-right: 0.3rem;  
+}
+.servicos h3{
+    margin-top: 0;
+    font-family: var(--font-primary);
+    font-size: 2.3rem;
+    background-color: #2E2E2E;
+    color: #78ffd6;
+    padding-bottom: 4rem;
+ 
+   
+}
+.servicos h4{
+    width: 65%;
+    font-size: 1.7rem;
+    font-family: var(--font-primary);
+    line-height: 2.2rem;
+    color: #636363;
+    padding-top: 1.5rem;
+    padding-left: 2rem;
+}
+
+.cards-servicos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.card-servico{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    background: #444444;
+    width: 11rem;
+    height: 12rem;
+    border: 1rem solid #444444;
+    border-radius: .5rem ;
+}
+.card-servico i{
+    font-size: 2.5rem;
+}
+.card-servico span{
+    font-size: 1.2rem;
+    line-height: 1rem;
+    font-family: var(--font-primary);
+}
+#card-servico1 i {
+    color: #00A85F;
+}
+#card-servico1 span{
+    color: #00A85F;
+}
+#card-servico2 i{
+    color:#3D70BD;
+}
+#card-servico2 span{
+    color:#3D70BD;
+}
+#card-servico3 i{
+    color:#E9E96F
+}
+#card-servico3 span{
+    color:#E9E96F
+}
+.card-servico p{
+  color:  #B6B6B6;
+}
+.pro{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #78FFD6;
+    font-weight: bolder;
+    text-transform: uppercase ;
+    font-family: "Rubik", sans-serif;
+    font-size: 4rem;
+    color:#FF00A1;
+    text-align: center;
+}
+
+@media screen and (min-width:1024px) {
+   .servicos h2{
+    padding-top: 1rem;
+       padding-left: 4rem;
+   }
+    .servicos h3{
+        background-color: #2E2E2E;;
+        padding-bottom: .5rem;
+        padding-left: 5rem;
+
+    }
+    .servicos h4{
+        margin-top: 2rem;
+        margin-left: 5rem;
+        width: 50%;
+        font-size: 3rem;
+        
+    }
+  .wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+  }
+    .cards-servicos{
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+        
+    }
+    
+    .card-servico{
+       width:  25%;
+    }
+   
+    .img-wrapper-servicos{
+       
+        width: 30%;
+        margin-bottom: 4rem;
+    }
+  .pro{
+    font-size: 3rem;
+    text-align: right;
+    padding-right: 4rem;
+  }
+
+}

@@ -1,0 +1,138 @@
+.metodologia {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.metodologia h2 {
+    margin-bottom: .5rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: .7rem;
+    font-family: "Raleway", sans-serif;
+    font-weight:300;
+    color: #4b4b4b;
+}
+
+.metodologia h2::before {
+    content: "";
+    border-right: .1rem solid #78ffd6;
+    border-top: .1rem solid transparent;
+    border-left: .1rem solid transparent;
+    border-bottom: .1rem solid transparent;
+    margin-right: 0.3rem;
+}
+
+.metodologia h3 {
+    margin-left: 1rem;
+    text-transform: uppercase;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #636363;
+}
+
+.numero {
+    font-size: 3rem;
+    font-family: 'Monoton', cursive;
+    font-weight: bold;
+}
+
+.metodologia-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.card-metodologia {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+}
+
+.card-texto-wrapper {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-texto-wrapper h4 {
+    font-family: "Raleway", sans-serif;
+}
+
+.card-texto-wrapper p {
+    font-family: "Raleway", sans-serif;
+}
+
+.img-metodologia-wrapper {
+    display: none;
+}
+
+@media screen and (min-width:1024px) {
+    .metodologia {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .metodologia h2 {
+        color: #292929;
+       
+        margin-left: 15rem;
+    }
+    .metodologia h3 {
+        margin-left: 15rem;
+    }
+    .metodologia-wrapper {
+        display: grid;
+        grid-template-columns: repeat(16, 1fr);
+        grid-template-rows: repeat(8, 4rem);
+    }
+    .card-metodologia:nth-child(1) {
+        grid-column: 4 /8;
+        grid-row: 2 / 4;
+    }
+    .card-metodologia:nth-child(1)::after {
+        font-size: 3rem;
+        font-weight: bold;
+        content: "01";
+        font-family: 'Monoton', cursive;
+    }
+    .espelho {
+        display: none;
+    }
+    .card-metodologia:nth-child(2) {
+        grid-column: 4/8;
+        grid-row: 4/ 8;
+    }
+    .card-metodologia:nth-child(2)::after {
+        font-size: 3rem;
+        font-weight: bold;
+        content: "01";
+        font-family: 'Monoton', cursive;
+    }
+    .card-metodologia:nth-child(3) {
+        grid-column: 8 /12;
+        grid-row: 7 / 11;
+    }
+    .card-metodologia:nth-child(5) {
+        grid-column: 11 /15;
+        grid-row: 2/ 4;
+    }
+    .card-metodologia:nth-child(4) {
+        grid-column: 11 /15;
+        grid-row: 4 /8
+    }
+    .img-metodologia-wrapper {
+        display: grid;
+        grid-column: 7 /11;
+        grid-row: 1 / 6;
+    }
+}

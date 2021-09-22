@@ -1,0 +1,170 @@
+.contato {
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+    background-color: #444444;
+}
+
+.card-contato-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #252525;
+    border-radius: .5rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 80%;
+    background-color: #252525;
+    margin-top: 1rem;
+}
+
+.contato h2 {
+    margin-bottom: .5rem;
+    margin-top: 2rem;
+    margin-left: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: .7rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: lighter;
+    color: #78ffd6;
+}
+
+.contato h2::before {
+    content: "";
+    border-right: .1rem solid #78ffd6;
+    border-top: .1rem solid transparent;
+    border-left: .1rem solid transparent;
+    border-bottom: .1rem solid transparent;
+    margin-right: 0.3rem;
+}
+
+.contato h3 {
+    margin-left: 1.7rem;
+    text-transform: uppercase;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.contato-p1 {
+    margin-top: .5rem;
+    padding-right: 1.7rem;
+    text-align: left;
+    margin-left: 1.7rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    color: rgb(214, 214, 214);
+}
+
+.contato-p2 {
+    padding-right: 1.7rem;
+    text-align: left;
+    margin-top: .5rem;
+    margin-left: 1.7rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    color: rgb(214, 214, 214);
+    margin-bottom: 1rem;
+}
+
+.contato-textos-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-contato i {
+    font-size: 2.5rem;
+    margin-right: .7rem;
+}
+
+#whatsApp {
+    color: rgb(3, 187, 3);
+}
+
+#email {
+    color: rgb(62, 62, 236)
+}
+
+#telefone {
+    color: orange;
+}
+
+.card-contato h4 {
+    margin-bottom: .2rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.1rem;
+    color: #78ffd6
+}
+
+.card-contato p {
+    font-family: "Raleway", sans-serif;
+    color: rgb(151, 151, 151);
+    font-size: .8rem;
+}
+
+.map-contato {
+    display: none;
+}
+
+@media screen and (min-width:1024px) {
+   .contato{
+       padding-top:6rem ;
+       padding-bottom: 8rem;
+   }
+  
+    .contato-wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      
+    }
+    .card-contato-wrapper {
+        width: 30%;
+    }
+    .textos-wrapper-esquerda {
+      
+        width: 30%;  
+        height: 25rem;
+    }
+    .textos-wrapper-esquerda p{
+        width: 70%;
+    }
+    .map-contato {
+        margin-top: 2rem;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-left: 2rem;
+    }
+    .map-contato span{
+        font-family: "Raleway", sans-serif;
+        margin-right: 2rem;
+    }
+    .map-contato i{
+       
+        font-size: 1.5rem;
+        color:red;
+    }
+    
+}

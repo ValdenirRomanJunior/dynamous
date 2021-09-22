@@ -1,12 +1,29 @@
-.porque-nos{
-    background: #444444;
+.porque-nos {
+    padding-top: 1.5rem;
+}
+
+.img-wrapper-porque {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
-.card-porque{
+
+.img-wrapper-individual{
+    background-color: #78FFD6;
+    width: 100%;
+    height: 25rem;
+}
+
+.img-wrapper-individual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-porque {
     margin-top: 1rem;
     width: 40%;
     text-align: center;
@@ -14,21 +31,132 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
-.porque-nos h2{
-    font-size: 1.7rem;
-    margin-top: 1rem;
-    color: #FFFFFF;
+
+.porque-nos h2 {
+    text-align: left;
+    margin-left: 1rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: lighter;
+    font-size: 2.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #131313;
 }
-.card-porque h3{
-color: #FFFFFF;;
+
+.porque-nos h4 {
+    text-align: left;
+    margin-left: 1rem;
+    font-size: 1.8rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    color: #131313;
+    margin-bottom: 2rem;
 }
-.card-porque i{
+
+.card-porque h3 {
+    font-family: "Raleway", sans-serif;
+    color: #636363;
+    ;
+}
+
+.card-porque i {
+    margin-bottom: .5rem;
     font-size: 2rem;
     color: #78FFD6;
 }
-.card-porque p{
+
+.card-porque p {
+    font-family: "Raleway", sans-serif;
     padding-top: .3rem;
-    color: #B6B6B6;
+    color: #9b9b9b;
+}
+
+.porque-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+    margin-top: 1rem;
+}
+
+.porque-escolher {
+    text-align: center;
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: #4d4d4d;
+    margin-top: 3rem;
+}
+
+.pro-porque {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #a044ff;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: "Rubik", sans-serif;
+    font-size: 4rem;
+    color: #78FFD6;
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .porque-wrapper {
+        margin-top: 5rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .porque-nos h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .porque-nos h4 {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .card-porque p {
+        width: 50%;
+    }
+    .img-wrapper-porque {
+        width: 100%;
+        height: 30rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .img-wrapper-individual {
+        height: 100%;
+    }
+    .img-wrapper-individual img:hover{  
+        opacity: 50%;
+        z-index: 100;
+    }
+    
+    .img-wrapper-porque::after {
+        content: "Business";
+        transform: rotate(90deg);
+        font-size: 5rem;
+        font-family: "Rubik", sans-serif;
+        color: #78FFD6;
+    }
+    .porque-escolher {
+        text-align: center;
+        width: 100%;
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        font-size: 2.2rem;
+        color: #979797;
+        margin-top: 3rem;
+    }
+    .pro-porque {
+        margin-top: 4rem;
+        text-align: left;
+        font-size: 3rem;
+    }
 }

@@ -1,39 +1,46 @@
 .sobre{
-    background: #F1F1F1;
-    padding-top: 2rem;
+    padding-top: 3rem;
     padding-right: 1rem;
     padding-left: 1rem;
+    padding-bottom: 4rem;
     
 }
 .titulo-sobre{
-    text-transform: capitalize;
-    font-size: 1.5rem;
-    color: #979797;
-    font-family: "Rubik", sans-serif;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: .7rem;
+    color: #4b4b4b;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
 }
 .titulo-sobre::before{
     content: "";
-    border-right: .2rem solid #78ffd6;
-    border-top: .2rem solid transparent;
-    border-left: .2rem solid transparent;
-    border-bottom: .2rem solid transparent;
+    border-right: .1rem solid #78ffd6;
+    border-top: .1rem solid transparent;
+    border-left: .1rem solid transparent;
+    border-bottom: .1rem solid transparent;
     margin-right: 0.3rem;  
 
 }
 .sobre h3{
-    font-size: 2.3rem;
-    color: #636363;
-    text-transform: capitalize;
-    font-family: var(--font-primary);
+  
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: #4b4b4b;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
 }
 .sobre h4{
-    font-size: 1.7rem;
-    font-family: var(--font-primary);
-    line-height: 2.2rem;
-    color: #979797;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    font-family: "Raleway", sans-serif;
+    line-height: 1.7rem;
+    color: #5c5c5c;
 }
 .sobre p{
-    font-family: var(--font-primary);
+    font-family:"Raleway", sans-serif;
     color:#B6B6B6;
     margin-top: 1rem;
     
@@ -43,24 +50,26 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:  center;
    
 }
 .icon{
-
+    padding-left: 0.5rem;
+    padding-right: .5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 1.5rem;
+   
     
 }
 .icon i{
+    text-align: center;
     font-size: 2rem;
     color:#78ffd6; 
 }
 .icon span{
-    font-family: var(--font-primary);
+    font-family: "Raleway", sans-serif;
 }
 .img-wrapper-sobre{
     display: none;

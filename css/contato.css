@@ -1,7 +1,7 @@
 .contato {
     padding-top: 3rem;
     padding-bottom: 7rem;
-    background-color: #444444;
+    background-color: #414141;
 }
 
 .card-contato-wrapper {
@@ -23,6 +23,7 @@
     padding-right: 1.2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    height: 3rem;
     width: 80%;
     background-color: #252525;
     margin-top: 1rem;
@@ -87,8 +88,8 @@
 .contato-textos-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: baseline;
+    justify-content: left;
 }
 
 .card-contato i {
@@ -119,6 +120,10 @@
     font-family: "Raleway", sans-serif;
     color: rgb(151, 151, 151);
     font-size: .8rem;
+}
+.card-contato a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .map-contato {

@@ -22,3 +22,13 @@ html{
 :root{
     --font-primary:"Baloo Da 2", serif;
 }
+.scroll-image[data-src]{
+    opacity: 0;
+    transform: translateX(-100%)
+}
+
+.scroll-image[src]{
+    opacity: 1;
+    transform: translateX(0);
+    transition: .5s ease-in-out;
+}

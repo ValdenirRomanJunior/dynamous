@@ -1,0 +1,62 @@
+.perguntas h2{
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.nav-perguntas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+}
+
+.nav-perguntas .ul-perguntas{
+    width: 90%;
+}
+.mostra-resposta .ul-perguntas{
+  
+    background-color: black;
+    border-radius: .5rem;
+}
+.pergunta{
+    border-bottom: 1px solid #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    background-color: black;
+    color: #fff;
+    
+}
+.pergunta i{
+    font-size: 1.2rem;
+    margin-left: 6rem;
+}
+
+.resposta{
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    background-color: black;
+    color: #fff;
+    
+
+  
+}
+.resposta{
+    visibility: hidden;
+    color: #fff;
+}
+.mostra-resposta .resposta{
+    margin-top: .1rem;
+    background-color: black;
+   
+    border-radius: .5rem;
+    visibility: visible;
+    transition: .5s;
+    
+}

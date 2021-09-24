@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="css/contato.css">
     <link rel="stylesheet" href="css/rodape.css">
     <title>Dynamous</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -46,8 +48,6 @@
                 <img class="logo-img" src="imagens/logo.svg">
             </div>
 
-
-
             <div class="banner">
                 <h1>modernizamos seu negócio com soluções<br>
                     <span class="txt-type" data-wait="3000" data-words='["tecnológicas", "Profissionais","inovadoras"]
@@ -56,30 +56,38 @@
                 <p>para seu negócio temos Desenvolvimento de sites, Landing Pages, catálogo virtual e <br>tráfego</p>
             </div>
             <div class="botao-wrapper">
-                <a href="#" class="botao-atendimento">atendimento</a>
-                <a href="#" class="botao-mais-detalhes">mais detalhes</a>
+                <a href="#contato" class="botao-atendimento">atendimento</a>
+                <a href="#sobre" class="botao-mais-detalhes">mais detalhes</a>
             </div>
             <div class="down">
                 <i class="fa fa-angle-double-down" aria-hidden="true"></i>
             </div>
+
+            <div class="load-wrapper">
+                <span class="loader"></span>
+            </div>
+
         </header>
         <div class="sidebar">
+            <div class="img-sidebar-wrapper">
+                <img src="imagens/logo.svg" />
+            </div>
             <nav>
                 <ul class="menu">
-                    <li class="menu-item"><a href="#" class="menu-link" id="menu-link1">a dynamous</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">soluções</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">metodologia</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">projetos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">contato</a></li>
+                    <li class="menu-item"><a href="#sobre" class="menu-link" id="menu-link1">a dynamous</a></li>
+                    <li class="menu-item"><a href="#porque" class="menu-link">por que nós?</a></li>
+                    <li class="menu-item"><a href="#solucoes" class="menu-link">soluções</a></li>
+                    <li class="menu-item"><a href="#metodologia" class="menu-link">metodologia</a></li>
+                    <li class="menu-item"><a href="#contato" class="menu-link">contato</a></li>
                 </ul>
             </nav>
 
         </div>
 
 
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="img-wrapper-sobre">
-                <img class="img-sobre" src="imagens/img-sobre.svg" alt="homem-programando">
+                <img class="img-sobre scroll-image" data-src="imagens/img-sobre.svg" alt="homem-programando">
             </div>
             <div class="sobre-textos">
                 <h2 class=titulo-sobre> a dynamous</h2>
@@ -127,17 +135,17 @@
             <div class="img-wrapper-porque">
 
                 <div class="img-wrapper-individual">
-                    <img src="imagens/img1-.jpg">
+                    <img class="scroll-image" data-src="imagens/img1-.jpg" />
                 </div>
                 <div class="img-wrapper-individual">
-                    <img src="imagens/img2.jpg">
+                    <img class="scroll-image" data-src="imagens/img2.jpg" />
                 </div>
                 <div class="img-wrapper-individual">
-                    <img src="imagens/img3.jpg">
+                    <img class="scroll-image" data-src="imagens/img3.jpg" />
                 </div>
             </div>
 
-            <p class="porque-escolher">Porque você deve escolher a <strong>
+            <p class="porque-escolher" id="porque">Porque você deve escolher a <strong>
                     <font color="#131313;">Dynamous</font>
                 </strong>?</p>
 
@@ -194,7 +202,7 @@
         </section>
 
 
-        <main class="servicos">
+        <main class="servicos" id="solucoes">
 
             <h2>O que fazemos</h2>
             <h3>serviços</h3>
@@ -209,9 +217,9 @@
                         <p>Para negócios que querem fortalecer
                             a imagem do seu negócio
                             na web.
-                        </p> 
+                        </p>
                     </div>
-                   
+
 
                     <div class="card-servico" id="card-servico2">
                         <i class="fas fa-pager"></i>
@@ -241,7 +249,7 @@
 
 
 
-        <section class="metodologia">
+        <section class="metodologia" id="metodologia">
 
 
             <h2>Como trabalhamos</h2>
@@ -295,13 +303,13 @@
                     </div>
                 </div>
                 <div class="img-metodologia-wrapper">
-                    <img src="imagens/time.svg">
+                    <img class="scroll-image" data-src="imagens/time.svg">
 
                 </div>
             </div>
         </section>
 
-        <section class="contato">
+        <section class="contato" id="contato">
             <div class="contato-wrapper">
 
                 <div class="textos-wrapper-esquerda">
@@ -324,28 +332,28 @@
                         <i class="fab fa-whatsapp" id="whatsApp"></i>
                         <div class="contato-textos-wrapper">
                             <h4>Atendimento por whatsApp</h4>
-                            <p>Clique para iniciar o atendimento</p>
+                            <p><a href="#whats">Clique aqui</a> para iniciar o atendimento</p>
                         </div>
                     </div>
                     <div class="card-contato">
                         <i class="fas fa-envelope" id="email"></i>
                         <div class="contato-textos-wrapper">
                             <h4>Atendimento por E-mail</h4>
-                            <p>Clique para entrar em contato por e-mail</p>
+                            <p><a href="email">Clique aqui</a> para entrar em contato por e-mail</p>
                         </div>
                     </div>
                     <div class="card-contato">
                         <i class="fas fa-phone-alt" id="telefone"></i>
                         <div class="contato-textos-wrapper">
                             <h4>Atendimento por Telefone</h4>
-                            <p>Clique para entrar em contato</p>
+                            <p> <a href="telefone">Clique aqui</a> para entrar em contato</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="rodape">
+        <footer class="rodape">
             <div class="logo-social-wrapper">
 
                 <div class="logo-wrapper-rodape">
@@ -353,9 +361,9 @@
                 </div>
 
                 <ul class="social">
-                    <li class="social-item" > <i class="fab fa-whatsapp" id="whats"></i></li>
-                    <li class="social-item" > <i class="fab fa-facebook" id="face"></i></li>
-                    <li class="social-item" > <i class="fab fa-instagram" id="insta"></i></li>
+                    <li class="social-item"> <i class="fab fa-whatsapp" id="whats"></i></li>
+                    <li class="social-item"> <i class="fab fa-facebook" id="face"></i></li>
+                    <li class="social-item"> <i class="fab fa-instagram" id="insta"></i></li>
                 </ul>
             </div>
             <div class="textos-map-wrapper">
@@ -369,12 +377,16 @@
                     <i class="fas fa-map-marker-alt"></i>
                 </div>
             </div>
-                <p class="copy">2021 Copyright © Dynamous soluções tech - Todos os Direitos Reservados.</p>
-            
-        </section>
+            <p class="copy">2021 Copyright © Dynamous soluções tech - Todos os Direitos Reservados.</p>
+
+        </footer>
     </div>
+    <script src="js/spinner.js"></script>
     <script src="js/script.js"></script>
     <script src="js/digitando.js"></script>
+    <script src="js/scroll-images.js"></script>
+    <script src="js/scroll-menu.js"></script>
+
 </body>
 
 </html>

@@ -142,6 +142,10 @@ header {
     color: rgb(105, 105, 105);
     text-transform: uppercase;
 }
+.menu-link i{
+    color: #78ffd6;
+    font-size: 1.6rem;
+}
 
 .img-sidebar-wrapper {
     position: absolute;
@@ -160,7 +164,7 @@ header {
 .img-wrapper-sites {
     position: absolute;
     top: 0;
-    bottom: 5rem;
+    bottom: 6rem;
     left: 0;
     right: 0;
     margin: auto;
@@ -178,8 +182,8 @@ header {
 .titulo-sites {
     font-family: "Raleway", sans-serif;
     width: 100%;
-    font-size: 1.4rem;
-    text-transform: uppercase;
+    font-size: 1.5rem;
+
     text-align: center;
     position: absolute;
     top: 9.5rem;
@@ -192,7 +196,7 @@ header {
     font-size: 1.2rem;
     font-family: "Raleway", sans-serif;
     position: absolute;
-    top:29rem;
+    top:27rem;
     margin-left: 2rem;
     margin-right: 2rem;
     color: #747272;

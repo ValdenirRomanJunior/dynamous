@@ -206,7 +206,6 @@ header {
 .mais-detalhes{
     font-size: 1rem;
     font-family: "Raleway", sans-serif;
-    box-sizing: border-box;
     color:#69e4bf;
     padding: .5rem 2rem;
     position: absolute;
@@ -252,7 +251,7 @@ header {
     align-items: center;
     width: 100%;
     position: absolute;
-    bottom: 4rem;
+    bottom: 3rem;
     color: #fff;
 }
 

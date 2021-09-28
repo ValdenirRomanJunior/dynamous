@@ -90,6 +90,7 @@
     flex-direction: column;
     align-items: baseline;
     justify-content: left;
+    width: 15rem;
 }
 
 .card-contato i {
@@ -121,7 +122,8 @@
     color: rgb(151, 151, 151);
     font-size: .8rem;
 }
-.card-contato a{
+
+.card-contato a {
     text-decoration: none;
     color: #fff;
 }
@@ -131,27 +133,24 @@
 }
 
 @media screen and (min-width:1024px) {
-   .contato{
-       padding-top:6rem ;
-       padding-bottom: 8rem;
-   }
-  
-    .contato-wrapper{
+    .contato {
+        padding-top: 6rem;
+        padding-bottom: 8rem;
+    }
+    .contato-wrapper {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-      
     }
     .card-contato-wrapper {
         width: 30%;
     }
     .textos-wrapper-esquerda {
-      
-        width: 30%;  
+        width: 30%;
         height: 25rem;
     }
-    .textos-wrapper-esquerda p{
+    .textos-wrapper-esquerda p {
         width: 70%;
     }
     .map-contato {
@@ -162,14 +161,12 @@
         justify-content: left;
         margin-left: 2rem;
     }
-    .map-contato span{
+    .map-contato span {
         font-family: "Raleway", sans-serif;
         margin-right: 2rem;
     }
-    .map-contato i{
-       
+    .map-contato i {
         font-size: 1.5rem;
-        color:red;
+        color: red;
     }
-    
 }

@@ -301,6 +301,53 @@ header {
     }
 }
 
+
+
+@media screen and (min-height:736px) {
+
+    .img-wrapper-trafego {
+        top: 0;
+        bottom: 15rem;
+        margin: auto;
+        width: 11rem;
+        height: 10rem;
+         
+    }
+    
+    .img-wrapper-trafego img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .titulo-trafego {
+        width: 100%;
+        font-family: "Raleway", sans-serif;
+        font-size: 1.7rem;
+        text-align: center;
+        position: absolute;
+        top: 22rem;
+        color: #585858;
+    }
+    
+    .texto-explicacao {
+        font-weight: lighter;
+        line-height: 1.9rem;
+        font-size: 1.3rem;
+        font-family: "Raleway", sans-serif;
+        position: absolute;
+        top:28rem;
+        margin-right: .7rem;
+        margin-left: .7rem;
+        text-align: center;
+        color: #747272;
+        
+    }
+
+
+    
+}
+
 @media screen and (min-width: 1024px) {
 
     .textos-wrapper-trafego{

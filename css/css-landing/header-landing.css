@@ -1,5 +1,4 @@
 .barra-topo {
-    position: absolute;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -12,7 +11,7 @@
 .social-barra {
     display: flex;
     align-items: center;
-    width: 20%;
+    width: 5rem;
     height: 100%;
 }
 
@@ -23,10 +22,8 @@
 }
 
 header {
-   
     width: 100%;
     height: 100vh;
-    overflow: hidden;
     position: relative;
 }
 
@@ -162,44 +159,36 @@ header {
 }
 
 .img-wrapper-sites {
-    position: absolute;
-    top: 0;
-    bottom: 4rem;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 15rem;
+    text-align: center;
+    margin-top: 1rem;
+    width: 100%;
     height: 10rem;
     
 }
 
 .img-wrapper-sites img {
-    width: 100%;
+    text-align: center;
+    width: 14rem;
     object-fit: cover;
     object-position: center;
 }
 
 .titulo-sites {
     font-family: "Raleway", sans-serif;
-    width: 90%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    font-size: 1.5rem;
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 1.4rem;
     text-align: center;
-    position: absolute;
-    top: 9.5rem;
     color: #585858;
 }
 
 .texto-explicacao {
+    margin-top: 1rem;
     line-height: 1.6rem;
     font-weight: lighter;
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: "Raleway", sans-serif;
-    position: absolute;
-    top:26rem;
     margin-left: 2rem;
     margin-right: 2rem;
     color: #747272;
@@ -215,11 +204,8 @@ header {
 }
 
 .logo-wrapper {
-    width: 12em;
-    height: 6em;
-    position: absolute;
-    top: 2.5rem;
-    left: 1.2rem;
+    width: 12rem;
+    height: 6rem;
 }
 
 .logo-img {
@@ -234,8 +220,6 @@ header {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    position: absolute;
-    bottom: 4rem;
     color: #fff;
 }
 
@@ -285,46 +269,45 @@ header {
     }
 }
 
-@media screen  and (min-height:719px){
+@media screen  and (min-height:715px){
+    .social-barra i {
 
+        font-size: 1.3rem;
+       
+    }
+    .logo-wrapper {
+        width: 14rem;
+        height: 8rem;
+    }
     .img-wrapper-sites {
-        top: 0;
-        bottom: 5rem;
-        left: 0;
-        right: 0;
-        margin: auto;
-        width: 16rem;
-        height: 13rem;
+        margin-top: 2rem;
+        text-align: center;
+        width: 100%;
+        height: 11rem;
         
     }
     
     .img-wrapper-sites img {
-        width: 100%;
+        text-align: center;
+        width: 17rem;
         object-fit: cover;
         object-position: center;
     }
     
     .titulo-sites {
         font-family: "Raleway", sans-serif;
-        width: 90%;
-        left: 0;
-        right: 0;
-        margin: auto;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         text-align: center;
-        position: absolute;
-        top: 9.5rem;
         color: #585858;
     }
     
     .texto-explicacao {
-        line-height: 1.8rem;
+        margin-top: 3rem;
+        line-height: 1.9rem;
         font-weight: lighter;
         text-align: left;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         font-family: "Raleway", sans-serif;
-        position: absolute;
-        top:28rem;
         margin-left: 2rem;
         margin-right: 2rem;
         color: #747272;
@@ -336,31 +319,47 @@ header {
 
 @media screen and (min-width: 1024px) {
     .titulo-sites{
+        width: 40%;
         font-size: 2.3rem;
         text-align: left;
-        margin-left: 17rem;
-        top: 14rem;
-    }
-    .img-wrapper-sites {
-        top: 14rem;
-        left: 50rem; 
-        margin: 0;
-        width: 30rem;
-        height: 13rem;
-        
+        margin-left: 14rem;
+        margin-top: 13rem;
+        float: left;
+       
     }
     .texto-explicacao {
         font-weight: normal;
-        margin-left: 17rem;
         width: 35%;
         line-height: 2.2rem;
         text-align: left;
         font-size: 1.4rem;
-        position: absolute;
-        top:20rem;
         color: #747272;
+        margin-left: 14rem;
+        float: left;
+        
         
     }
+    .img-wrapper-sites {
+        margin-top: 13rem;
+        width: 30%;
+        height: 16rem;
+        float: right;   
+        margin-right: 10rem; 
+        margin-bottom: 7rem;
+        
+    } 
+    .img-wrapper-sites img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .down{
+        clear: both;
+        
+        
+       
+    }
+    
  
     .logo-wrapper {
         display: none;
@@ -423,6 +422,7 @@ header {
         height: 2.9rem;
     }
     .social-barra {
+        margin-right: 4rem;
         justify-content: center;
     }
     .social-barra i {
@@ -440,4 +440,5 @@ header {
     .hamburguer{
         display: none;
     }
+   
 }

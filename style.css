@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600&family=Josefin+Slab:ital,wght@0,200;0,400;0,600;1,200&family=Mulish:ital,wght@0,300;1,200;1,300&display=swap');
-
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;1,200&display=swap');
-
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,600;1,200&family=Space+Grotesk:wght@300;400;500&family=Spartan:wght@200;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;1,100;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Press+Start+2P&display=swap');
 
@@ -32,3 +27,4 @@ html{
     transform: translateX(0);
     transition: .5s ease-in-out;
 }
+

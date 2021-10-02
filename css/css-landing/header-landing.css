@@ -285,7 +285,7 @@ header {
     }
 }
 
-@media screen  and (min-height:736px){
+@media screen  and (min-height:719px){
 
     .img-wrapper-sites {
         top: 0;
@@ -324,7 +324,7 @@ header {
         font-size: 1.3rem;
         font-family: "Raleway", sans-serif;
         position: absolute;
-        top:27rem;
+        top:28rem;
         margin-left: 2rem;
         margin-right: 2rem;
         color: #747272;

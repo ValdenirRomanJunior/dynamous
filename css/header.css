@@ -348,7 +348,7 @@ header {
 }
 
 
-@media screen  and (min-height:736px) {
+@media screen  and (min-height:719px) {
     
     .logo-wrapper{
         width: 13em;
@@ -388,6 +388,9 @@ header {
 }
 .botao-wrapper{
     margin-top: 2rem;
+}
+.down{
+    bottom: 5rem;
 }
 }
 

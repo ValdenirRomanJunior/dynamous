@@ -1,6 +1,6 @@
 .servicos {
     padding-top: 2rem;
-    background-color: #ffffff;
+    background-color: #90c5f3;
 }
 
 .servicos h2 {
@@ -11,7 +11,7 @@
     font-size: .7rem;
     font-family: "Raleway", sans-serif;
     font-weight: 300;
-    color: #4b4b4b;
+    color: #ffffff;
 }
 
 .servicos h2::before {
@@ -31,18 +31,20 @@
     font-size: 1.3rem;
     letter-spacing: .1rem;
     font-weight: 300;
-    margin-bottom: 1rem;
-    color: #636363;
+    margin-bottom: 2rem;
+    color: #ffffff;
 }
 
 .servicos h4 {
-    width: 80%;
+    text-align: center;
     font-size: 1.3rem;
     font-family: "Raleway", sans-serif;
     line-height: 1.7rem;
-    color: #5c5c5c;
+    color: #ffffff;
     margin-left: 1rem;
-    margin-bottom: 2rem;
+    padding-left: .4rem;
+    padding-right: .4rem;
+    margin-bottom: 1rem;
 }
 
 .cards-servicos {
@@ -60,18 +62,18 @@
     flex-direction: column;
     justify-content: space-between;
     margin-top: 2rem;
-    background: #444444;
-    width: 11rem;
-    height: 14rem;
-    border: 1rem solid #444444;
+    background: #ffffff;
+    width: 85%;
     border-radius: .5rem;
     position: relative;
     overflow: hidden;
+    padding: .5rem .5rem 1rem .5rem;
 }
 
 .mais-detalhes {
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
     text-align: center;
     padding-top: .5rem;
     padding-bottom: .5rem;
@@ -80,28 +82,84 @@
     border-radius: .5rem;
     opacity: 80%;
     box-sizing: border-box;
-    margin-top: .5rem;
-    color:#444444;
+    margin-top: 2rem;
+    color:#303030;
     font-family: "Raleway", sans-serif;
+}
+.mais-detalhes  .fab{
+    color: #444444;
+    font-size: 1.2rem;
+    margin-right: .3rem;
 }
 
 .card-servico i {
-    font-size: 2.5rem;
+    color:#78FFD6;
+    font-size: 2rem;
 }
 
 .card-servico span {
-    font-size: 1.2rem;
+    color: #4c4c51;
+    text-align: center;
+    font-size: 1.9rem;
     line-height: 1rem;
     font-family: var(--font-primary);
+    border-bottom: .5rem solid #6aa7da;
+    border-bottom-right-radius: 2rem;
+    line-height: 4rem;
+}
+.card-servico h5{
+    font-family: "Raleway", sans-serif;
+    margin-top: .6rem;
+    text-align: center;
+    color:#4c4c51;
+    font-size: 3rem;
+}
+.card-servico h6{
+    font-family: "Raleway", sans-serif;
+    margin-top: 1.2rem;
+    text-align: center;
+    color:#4c4c51;
+    font-size: 1.1rem;
+    font-weight:normal;
+
+}
+.card-servico p {
+    text-align: center;
+    font-weight: lighter;
+    font-family: "Raleway", sans-serif;
+    color: #4c4c51;
+    font-size: 1.4rem;
+    margin-top: .7rem;
+    font-weight: normal;
+}
+.card-servico ul{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    line-height: 2rem;
+    
+}
+.card-servico ul li{
+    width: 70%;
+    color: #4c4c51;
+    font-family: var(--font-primary);
+    font-size: 1.1rem;
+    font-style: normal;
+    
+}
+.card-servico ul li i{
+    color: #29c469;
+    font-size: 1.2rem;
+    margin-right: .5rem;
+  
 }
 
-#card-servico1 i {
-    color: #00A85F;
-}
 
-#card-servico1 span {
-    color: #00A85F;
-}
+
+
 
 #card-servico2 i {
     color: #4b82d4;
@@ -119,11 +177,7 @@
     color: #E9E96F
 }
 
-.card-servico p {
-    font-weight: lighter;
-    font-family: "Raleway", sans-serif;
-    color: #B6B6B6;
-}
+
 
 .pro {
     width: 100%;
@@ -139,6 +193,10 @@
 }
 
 @media screen and (min-width:1024px) {
+    .servicos {
+        padding-top: 2rem;
+        background:#fff;
+    }
     .servicos h2 {
         color: #292929;
         margin-left: 10rem;
@@ -146,16 +204,16 @@
         padding-left: 4rem;
     }
     .servicos h3 {
+        color: #292929;
         margin-left: 9rem;
         padding-bottom: .5rem;
         padding-left: 5rem;
     }
     .servicos h4 {
-        margin-left: 13rem;
-        line-height: 2.5rem;
-        width: 50%;
-        margin-top: 2rem;
-        font-size: 3rem;
+        color:#4c4c51;
+     text-align: center;
+        margin-top: 3rem;
+        font-size: 2.5rem;
     }
     .wrapper {
         display: flex;
@@ -164,15 +222,19 @@
         flex-direction: row;
     }
     .cards-servicos {
+        margin-bottom: 2rem;
         display: flex;
         flex-direction: row;
-        width: 40%;
+        align-items: initial;
+        width: 70%;
     }
     .card-servico {
-        width: 25%;
+        background-color: #EEF2F9;
+        width:30%;
         cursor: pointer;
     }
     .img-wrapper-servicos {
+        display: none;
         width: 30%;
         margin-bottom: 4rem;
     }
@@ -182,13 +244,14 @@
         text-align: right;
     }
     .mais-detalhes {
-        color: #fff;
+        color: #303030;
         background: none;
+       
     }
     .mais-detalhes::before {
         content: "";
         position: absolute;
-        bottom: -1.1rem;
+        bottom: -.2rem;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
@@ -201,13 +264,10 @@
     }
     .md-1::before {
         width: 0;
-        height: 2.3rem;
+        height: 2.5rem;
     }
     .md-1:hover::before {
-      
-        width: 100%;
+        width: 95%;
     }
-    .mais-detalhes:hover{
-        color:#444444;
-    }
+   
 }

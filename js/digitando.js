@@ -1,4 +1,4 @@
-    const TypeWriter = function(txtElement ,words ,wait = 3000){
+    const TypeWriter = function(txtElement ,words ,wait = 4000){
         this.txtElement=txtElement;
         this.words=words;
         this.txt='';
@@ -31,7 +31,7 @@
         this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
     
         //type Speed
-        let typeSpeed= 300;
+        let typeSpeed= 400;
     
         if(this.isDeleting){
             typeSpeed /= 2;
